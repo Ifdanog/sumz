@@ -25,7 +25,7 @@ const Demo = () => {
     e.preventDefault()
     setIsFetching(true)
 
-    const url = 'https://article-extractor-and-summarizer.p.rapidapi.com/summarize?url=https%3A%2F%2Fblog.hubspot.com%2Fmarketing%2Fwhat-is-a-blog&length=3';
+    const url = `https://article-extractor-and-summarizer.p.rapidapi.com/summarize?url=${article.url}&length=3`;
     const options = {
       method: 'GET',
       headers: {
